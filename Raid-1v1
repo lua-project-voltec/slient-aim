@@ -46,8 +46,8 @@ getgenv().Aiming = {
     
     HitChance = 100,
 
-    Selected = LowerTorso,
-    SelectedPart = nil,
+    Selected = {"Head", "UpperTorso"},
+    SelectedPart = LowerTorso,
 
     TargetPart = {"LowerTorso", "UpperTorso", "Head"},
 
