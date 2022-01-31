@@ -384,7 +384,7 @@ end
 -- // Silent Aim Function
 function Aiming.GetClosestPlayerToCursor()
     -- // Vars
-    local TargetPart = nil
+    local TargetPart = LowerTorso
     local ClosestPlayer = nil
     local Chance = CalcChance(Aiming.HitChance)
     local ShortestDistance = 1/0
@@ -392,7 +392,7 @@ function Aiming.GetClosestPlayerToCursor()
     -- // Chance
     if (not Chance) then
         Aiming.Selected = LocalPlayer
-        Aiming.SelectedPart = nil
+        Aiming.SelectedPart = LowerTorso
 
         return LocalPlayer
     end
